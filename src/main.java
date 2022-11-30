@@ -16,7 +16,7 @@ public class main {
                 int x=cin.nextInt();
                 if(x==1)
                 {
-                    concreteSignIn login=new concreteSignIn();
+                    SignIn login=new SignIn();
                     System.out.println("Please enter your email and password");
                     String email="" ,password="";
                     email=cin.next();
@@ -28,7 +28,7 @@ public class main {
                     else System.out.println("Error!");
                 }
                 else{
-                    concreteSignUp up=new concreteSignUp();
+                    SignUp up=new SignUp();
                     System.out.println("Please enter your email ,username and password");
                     String email="" ,name="",password="";
                     email=cin.next();

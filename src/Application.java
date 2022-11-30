@@ -4,7 +4,7 @@ public class Application {
     ArrayList<String> names = new ArrayList<String>();
     ArrayList<String>mails  = new ArrayList<String>();
     ArrayList<String>password  = new ArrayList<String>();
-    boolean checkUp(concreteSignUp x)
+    boolean checkUp(SignUp x)
     {
         for (int i=0;i< mails.size();i++){
             if(mails.get(i)==x.getEmail())return false;
@@ -14,7 +14,7 @@ public class Application {
         }
         return true;
     }
-    boolean checkIn(concreteSignIn x){
+    boolean checkIn(SignIn x){
         for (int i=0;i<mails.size();i++){
             if(mails.get(i)==x.getEmail()&&password.get(i)==x.getPassword())return true;
         }

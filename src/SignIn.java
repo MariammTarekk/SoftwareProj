@@ -1,5 +1,4 @@
-import java.util.*;
-public class concreteSignIn {
+public class SignIn {
 
     private String email="",password="";
     public void setEmail(String email) {
