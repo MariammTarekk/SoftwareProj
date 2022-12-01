@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String []args){
         Application obj=new Application() ;
+       // Balance_Data obj2=new Balance_Data();
         while (true){
             Scanner cin=new Scanner(System.in);
             System.out.println("choose 1 if you are customer ");
@@ -23,8 +24,11 @@ public class main {
                     password=cin.next();
                     login.setEmail(email);
                     login.setPassword(password);
-                    if(obj.checkIn(login))
+                    if(obj.checkIn(login)){
                         System.out.println("Welcome to the system");
+
+                    }
+
                     else System.out.println("Error!");
                 }
                 else{
@@ -37,11 +41,23 @@ public class main {
                     up.setUser_name(name);
                     up.setEmail(email);
                     up.setPassword(password);
+
                     if(obj.checkUp(up)){
-                        obj.names.add(name);
-                        obj.mails.add(email);
-                        obj.password.add(password);
+                        user us=new user();
+                        us.name=name;us.passward=password;
+                        us.mails=email;us.walet=50;
+                        us.credit=100;
+                        obj.users.add(us);
                         System.out.println("Welcome to the system");
+                        System.out.println("to withdraw enter 1");
+                        int z= cin.nextInt();
+                        if(z==1){
+                            double a= cin.nextDouble();
+                            credit_card ob=new credit_card();
+                            ob.setBalance(us.credit);
+                            if(ob.withdraw(a)=="Done")us.credit-=50;
+                            else System.out.println("Error");
+                        }
                     }
                     else System.out.println("Error!");
                 }
