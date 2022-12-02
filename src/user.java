@@ -1,9 +1,10 @@
 public class user {
     String name="",mails="",passward="";
-    Balance w;
-    Balance c;
+    Balance wallet;
+    Balance card;
+    String card_passward="";
     user(){
-       w=new wallet(0.0,"Wallet");
-       c=new credit_card(0.0,"credit_card");
+       wallet =new wallet(0.0,"Wallet");
+       card =new credit_card(0.0,"credit_card");
    }
 }

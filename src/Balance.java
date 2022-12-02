@@ -1,7 +1,6 @@
 public class Balance {
   String name;
   double amount=0.0;
-
   Balance(double amount,String name){
       this.amount=amount;
       this.name=name;
@@ -27,5 +26,8 @@ public class Balance {
       }
       amount-=cost;
       return true;
+    }
+    public void add(double amount){
+      this.amount+=amount;
     }
 }

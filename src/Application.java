@@ -6,18 +6,19 @@ public class Application {
     boolean checkUp(SignUp x)
     {
         for (int i=0;i< users.size();i++){
-            if(users.get(i).mails==x.getEmail())return false;
+            if(users.get(i).mails.equals(x.getEmail()))return false;
         }
         for (int i=0;i< users.size();i++){
-            if(users.get(i).name==x.getUser_name())return false;
+            if(users.get(i).name.equals(x.getUser_name()))return false;
         }
         return true;
     }
     boolean checkIn(SignIn x){
+        boolean ok=false;
         for (int i=0;i<users.size();i++){
-            if(users.get(i).mails==x.getEmail()&&users.get(i).passward==x.getPassword())return true;
+            if(users.get(i).mails.equals(x.getEmail())&&users.get(i).passward.equals(x.getPassword()))ok=true;
         }
-        return false;
+        return ok;
     }
 
 
