@@ -1,7 +1,11 @@
-public abstract class Balance {
+public class Balance {
   String name;
-  double amount;
+  double amount=0.0;
 
+  Balance(double amount,String name){
+      this.amount=amount;
+      this.name=name;
+  }
     public void setAmount(double amount) {
         this.amount = amount;
     }
@@ -17,5 +21,11 @@ public abstract class Balance {
     public String getName() {
         return name;
     }
-    public abstract String withdraw(Double amount);
+    public boolean withdraw(double cost){
+      if(cost>amount){
+          return false;
+      }
+      amount-=cost;
+      return true;
+    }
 }

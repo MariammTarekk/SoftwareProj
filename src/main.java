@@ -26,7 +26,6 @@ public class main {
                     login.setPassword(password);
                     if(obj.checkIn(login)){
                         System.out.println("Welcome to the system");
-
                     }
 
                     else System.out.println("Error!");
@@ -45,18 +44,20 @@ public class main {
                     if(obj.checkUp(up)){
                         user us=new user();
                         us.name=name;us.passward=password;
-                        us.mails=email;us.walet=50;
-                        us.credit=100;
+                        us.mails=email;
+                        us.w.amount=50.0;
+                        us.c.amount=100.0;
                         obj.users.add(us);
                         System.out.println("Welcome to the system");
                         System.out.println("to withdraw enter 1");
                         int z= cin.nextInt();
                         if(z==1){
                             double a= cin.nextDouble();
-                            credit_card ob=new credit_card();
-                            ob.setBalance(us.credit);
-                            if(ob.withdraw(a)=="Done")us.credit-=50;
-                            else System.out.println("Error");
+                            //credit_card ob=new credit_card();
+                            if(us.w.withdraw(a))System.out.println("Done");
+                            for (int i=0;i<obj.users.size();i++){
+                                System.out.println(obj.users.get(i).w.amount);
+                            }
                         }
                     }
                     else System.out.println("Error!");
