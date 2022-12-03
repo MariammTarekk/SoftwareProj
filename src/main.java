@@ -26,15 +26,25 @@ public class main {
                     login.setEmail(email);
                     login.setPassword(password);
                     if (obj.checkIn(login)) {
-                        System.out.println("Welcome to the system to list all services enter 1 or 2 to search");
-                        int choice = cin.nextInt();
-                        if (choice == 1) {
-                            list.list();
-                        } else {
-                            System.out.println("Enter name of the service :");
-                            String serv = cin.next();
-                            list.search(serv);
+                        boolean log=true;
+                        while (log){
+                            System.out.println("To Logout enter 3");
+                            System.out.println("Welcome to the system to list all services enter 1 or 2 to search");
+                            int choice = cin.nextInt();
+                            if (choice == 1) {
+                                list.list();
+
+                            } else if(choice==2) {
+                                System.out.println("Enter name of the service :");
+                                String serv = cin.next();
+                                list.search(serv);
+                                Client test=new Client(serv);
+                            }
+                            else{
+                                break;
+                            }
                         }
+
                     } else System.out.println("Error!");
                 }
                 else{
