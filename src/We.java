@@ -1,21 +1,21 @@
 public class We implements Companies{
     @Override
-    public void createInternet() {
-
+    public Service createInternet() {
+        return new Internet();
     }
 
     @Override
-    public void createMobile() {
-
+    public Service createMobile() {
+        return new Mobile();
     }
 
     @Override
-    public void createDonations() {
-
+    public Service createDonations() {
+        return new Null();
     }
 
     @Override
-    public void createLandline() {
-
+    public Service createLandline() {
+        return new Null();
     }
 }

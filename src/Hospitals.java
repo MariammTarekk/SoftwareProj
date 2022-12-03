@@ -1,17 +1,17 @@
-public class Vodafone implements Companies{
+public class Hospitals implements Companies{
     @Override
     public Service createInternet() {
-        return new Internet();
+        return new Null();
     }
 
     @Override
     public Service createMobile() {
-        return new Mobile();
+        return new Null();
     }
 
     @Override
     public Service createDonations() {
-        return new Null();
+        return new Donations();
     }
 
     @Override
