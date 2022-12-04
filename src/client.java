@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class client {
     Scanner cin=new Scanner(System.in);
     client(Application obj,String service , int current_user){
-
+        double cost_internet=30.0;double cost_mobile=50.0;double cost_donations=100.0;
+        double cost_Landline=10.0;
         if(service.equals("Internet")){
             System.out.println("Choose 1 for Vodafone provider");
             System.out.println("Choose 2 for Etisalat provider");
@@ -14,27 +15,39 @@ public class client {
                 Companies objj=new Vodafone();
                 Service s =objj.createInternet();
                 System.out.println("method of payment 1 for wallet 2 Credit card 3 for cash");
-                System.out.println("before: "+obj.users.get(current_user).wallet.amount);
+               // System.out.println("before: "+obj.users.get(current_user).wallet.amount);
                 int num=cin.nextInt();
-                if(num==1){
+                    if(num==1){
                     Payment paye=new wallet_payment();
-                    paye.pay(obj.users.get(current_user),20.0,0);
-
+                    paye.pay(obj.users.get(current_user),cost_internet,0);
                     System.out.println("after: "+obj.users.get(current_user).wallet.amount);
+                    obj.users.get(current_user).arr.get(current_user).service=service;
+                    obj.users.get(current_user).arr.get(current_user).cost=cost_internet;
+                    }
+                    else if(num==2){
+                        Payment pay=new credit_payment();
+                        pay.pay(obj.users.get(current_user),cost_internet,0);
+                        System.out.println("after: "+obj.users.get(current_user).card.amount);
+                        orders ord=new orders();ord.service=service;ord.cost=cost_internet;
+                        obj.users.get(current_user).arr.add(ord);
+                    }
+                    else{
+                        Payment p=new cache_payment();
+                        p.pay(obj.users.get(current_user),cost_internet,0);
+                    }
                 }
-            }
-            else if(choicee==2){
-                Companies objj=new Etisalat();
-                objj.createInternet();
-            }
-            else if(choicee==3){
-                Companies objj=new We();
-                objj.createInternet();
-            }
-            else if(choicee==4){
-                Companies objj=new Orange();
-                objj.createInternet();
-            }
+                else if(choicee==2){
+                    Companies objj=new Etisalat();
+                    objj.createInternet();
+                }
+                else if(choicee==3){
+                    Companies objj=new We();
+                    objj.createInternet();
+                }
+                else if(choicee==4){
+                    Companies objj=new Orange();
+                    objj.createInternet();
+                }
 
         }
         else if(service.equals("Mobile")){

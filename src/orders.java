@@ -1,4 +1,4 @@
 public class orders {
     String service="";
-    int cost=0;
+    double cost=0.0;
 }
