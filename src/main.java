@@ -103,7 +103,9 @@ public class main {
                             if(okk==1){
                                 transaction transaction=new transaction();
                                 transaction.update(entry.getKey(),refunds.refund_value(entry.getKey(),entry.getValue()));
+                                System.out.println(entry.getKey().wallet.amount);
                                 refunds.refund_list.remove(entry.getKey());
+
                             }
                             else{
                                 refunds.refund_list.remove(entry.getKey());
