@@ -1,14 +1,15 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Searching {
-    ArrayList<String>view;
+    HashMap<String,Integer>view;
     Searching(){
-        view=new ArrayList<String>();
-        view.add("Mobile");
-        view.add("Internet");
-        view.add("LandLine");
-        view.add("Donations");
+        view=new HashMap<String,Integer>();
+        view.put("Mobile",0);
+        view.put("Internet",0);
+        view.put("LandLine",0);
+        view.put("Donations",0);
     }
     public void search(String s){
         for(int i=0;i< view.size();i++){
@@ -16,8 +17,8 @@ public class Searching {
         }
     }
     public void list(){
-        for(int i=0;i< view.size();i++){
-            System.out.println(view.get(i));
+        for (Map.Entry<String,Integer> entry :view.entrySet()){
+            System.out.println(entry.getKey());
         }
     }
 

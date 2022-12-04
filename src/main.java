@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class main {
@@ -48,9 +50,15 @@ public class main {
                                     int choicee=cin.nextInt();
                                     if(choicee==1){
                                         Companies objj=new Vodafone();
-                                        objj.createInternet();
-                                        obj.users.get(current_user).wallet.withdraw(50.0);
-                                        System.out.println(obj.users.get(current_user).wallet.amount);
+                                        Service s =objj.createInternet();
+                                        System.out.println("method of payment 1 for wallet 2 Credit card 3 for cash");
+                                        System.out.println("before: "+obj.users.get(current_user).wallet.amount);
+                                        int num=cin.nextInt();
+                                        if(num==1){
+                                            Payment paye=new wallet_payment();
+                                            paye.pay(obj.users.get(current_user),20.0);
+                                            System.out.println("after: "+obj.users.get(current_user).wallet.amount);
+                                        }
                                     }
                                     else if(choicee==2){
                                         Companies objj=new Etisalat();
@@ -161,7 +169,16 @@ public class main {
                 System.out.println("Enter Password :");
                 String pass=cin.next();
                 if(nam.equals(system.name)&&pass.equals(system.password)){
-
+                    System.out.println("Enter 1 to Add Discount 2 to view refund");
+                    int cho= cin.nextInt();
+                    if(cho==1){
+                        String serv=cin.next();
+                        int value=cin.nextInt();
+                        list.view.put(serv,value);
+                        for (Map.Entry<String,Integer> entry : list.view.entrySet()){
+                            System.out.println(entry.getKey() +" "+entry.getValue());
+                        }
+                    }
                 }
                 else{
                     System.out.println("Not Admin !!!!");

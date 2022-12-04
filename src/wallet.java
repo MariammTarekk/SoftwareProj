@@ -1,7 +1,7 @@
 public class wallet extends Balance{
 
-    wallet(double amount, String name) {
-        super(amount, name);
+    wallet(double amount) {
+        super(amount);
     }
     public void fund(credit_card card,String pass,double cost){
         if(card.check(pass)){

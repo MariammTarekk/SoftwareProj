@@ -4,7 +4,7 @@ public class credit_payment implements Payment {
         return false;
     }
     @Override
-    public void pay(double cost) {
-        if(b.amount>=cost)b.amount-=cost;
+    public void pay(user User,double cost) {
+        if(User.wallet.amount>=cost)User.wallet.amount-=cost;
     }
 }

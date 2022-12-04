@@ -1,22 +1,16 @@
 public class Balance {
-  String name;
-  double amount=0.0;
-
+    double amount=0.0;
+    Balance(double amount) {
+        this.amount=amount;
+    }
     public void setAmount(double amount) {
         this.amount = amount;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getAmount() {
         return amount;
     }
 
-    public String getName() {
-        return name;
-    }
     public boolean withdraw(double cost){
       if(cost>amount){
           return false;
