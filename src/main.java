@@ -102,7 +102,8 @@ public class main {
                             System.out.println( "choose 1 to Accept or 2 to reject "+entry.getKey().name+" "+entry.getKey().mails +" "+entry.getValue()+" "+refunds.refund_value(entry.getKey(),entry.getValue()));
                             int okk=cin.nextInt();
                             if(okk==1){
-
+                                transaction transaction=new transaction();
+                                transaction.update(entry.getKey(),refunds.refund_value(entry.getKey(),entry.getValue()));
                             }
                             else{
 
