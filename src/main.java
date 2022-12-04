@@ -6,6 +6,7 @@ public class main {
         //user us = new user();
         Application obj=new Application() ;
         Searching list=new Searching();
+        Refund refunds=new Refund();
         while (true){
             Scanner cin=new Scanner(System.in);
             System.out.println("choose 1 if you are customer ");
@@ -30,8 +31,9 @@ public class main {
                     if (obj.checkIn(login,current_user)) {
                         boolean log=true;
                         while (log){
-                            System.out.println("To Logout enter 3");
                             System.out.println("Welcome to the system to list all services enter 1 or 2 to search");
+                            System.out.println("To refund enter 3");
+                            System.out.println("To Logout enter 4");
                             int choice = cin.nextInt();
                             if (choice == 1) {
                                 list.list();
@@ -41,6 +43,12 @@ public class main {
                                 String service = cin.next();
                              //   list.search(service);
                                client cli=new client(obj,service,current_user);
+                            }
+                            else if(choice==3){
+                                Refund test=new Refund();
+                                System.out.println("Enter service name :");
+                                String s=cin.next();
+                                test.Send_Refund(obj.users.get(current_user),s);
                             }
                             else{
                                 break;
@@ -73,7 +81,7 @@ public class main {
             }
             else if(y==2){
                 // admin add serv fakes , add discount ,refund requests (related service ,amount) accept or no
-                Observer_admin system=new Observer_admin();
+                admin system=new admin();
                 System.out.println("Enter Your Name :");
                 String nam=cin.next();
                 System.out.println("Enter Password :");
@@ -87,6 +95,19 @@ public class main {
                         list.view.put(serv,value);
                         for (Map.Entry<String,Integer> entry : list.view.entrySet()){
                             System.out.println(entry.getKey() +" "+entry.getValue());
+                        }
+                    }
+                    else if(cho==2){
+                        for (Map.Entry<user,String> entry : refunds.refund_list.entrySet()){
+                            System.out.println( "choose 1 to Accept or 2 to reject "+entry.getKey().name+" "+entry.getKey().mails +" "+entry.getValue()+" "+refunds.refund_value(entry.getKey(),entry.getValue()));
+                            int okk=cin.nextInt();
+                            if(okk==1){
+
+                            }
+                            else{
+
+                            }
+
                         }
                     }
                 }
