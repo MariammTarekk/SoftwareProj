@@ -45,10 +45,9 @@ public class main {
                                client cli=new client(obj,service,current_user);
                             }
                             else if(choice==3){
-                                Refund test=new Refund();
                                 System.out.println("Enter service name :");
                                 String s=cin.next();
-                                test.Send_Refund(obj.users.get(current_user),s);
+                                refunds.Send_Refund(obj.users.get(current_user),s);
                             }
                             else{
                                 break;
@@ -104,11 +103,11 @@ public class main {
                             if(okk==1){
                                 transaction transaction=new transaction();
                                 transaction.update(entry.getKey(),refunds.refund_value(entry.getKey(),entry.getValue()));
+                                refunds.refund_list.remove(entry.getKey());
                             }
                             else{
-
+                                refunds.refund_list.remove(entry.getKey());
                             }
-
                         }
                     }
                 }
