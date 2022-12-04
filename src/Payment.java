@@ -1,4 +1,4 @@
-public abstract class Payment {
-    Balance b;
-    public abstract void pay(double cost);
+public interface Payment {
+    Balance b=new Balance();
+    public void pay(double cost);
 }
