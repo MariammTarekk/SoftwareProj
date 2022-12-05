@@ -1,7 +1,7 @@
-public class credit_card extends Balance{
+public class Credit_card extends Balance{
     String password="";
     int number;
-    credit_card(double amount) {
+    Credit_card(double amount) {
         super(amount);
     }
     boolean check(String x){

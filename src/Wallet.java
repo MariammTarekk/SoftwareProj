@@ -1,9 +1,9 @@
-public class wallet extends Balance{
+public class Wallet extends Balance{
 
-    wallet(double amount) {
+    Wallet(double amount) {
         super(amount);
     }
-    public void fund(credit_card card,String pass,double cost){
+    public void fund(Credit_card card, String pass, double cost){
         if(card.check(pass)){
             card.withdraw(cost);
             this.add(cost);

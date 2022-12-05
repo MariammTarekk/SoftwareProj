@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Application {
-    ArrayList<user> users = new ArrayList<user>();
+    ArrayList<User> users = new ArrayList<User>();
 
     boolean checkUp(SignUp x)
     {

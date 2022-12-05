@@ -1,15 +1,15 @@
 import java.util.ArrayList;
-import java.util.*;
 
-public class user {
+public class User {
     String name="",mails="",passward="";
     Balance wallet;
     Balance card;
     String card_passward="";
     ArrayList<orders>arr;
-    user(){
+    ArrayList<String>messages;
+    User(){
         arr=new ArrayList<orders>();
-        wallet =new wallet(0.0);
-        card =new credit_card(0.0);
+        wallet =new Wallet(0.0);
+        card =new Credit_card(0.0);
    }
 }

@@ -1,4 +1,4 @@
-public class schools implements Companies{
+public class Schools implements Companies{
     @Override
     public Service createInternet() {
         return new Null();
