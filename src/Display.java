@@ -38,7 +38,7 @@ public class Display {
                                 System.out.println("Enter name of the service :");
                                 String service = cin.next();
                                 //   list.search(service);
-                                Client cli=new Client(obj,service,current_user);
+                                Client cli=new Client(obj,service,current_user,list);
                             }
                             else if(choice==3){
                                 System.out.println("Enter service name :");
@@ -86,10 +86,12 @@ public class Display {
                     System.out.println("Enter 1 to Add Discount 2 to view refund");
                     int cho= cin.nextInt();
                     if(cho==1){
+                        System.out.println("Enter service name:");
                         String serv=cin.next();
-                        int value=cin.nextInt();
+                        System.out.println("Enter value of discount (double)");
+                        double value=cin.nextDouble();
                         list.view.put(serv,value);
-                        for (Map.Entry<String,Integer> entry : list.view.entrySet()){
+                        for (Map.Entry<String,Double> entry : list.view.entrySet()){
                             System.out.println(entry.getKey() +" "+entry.getValue());
                         }
                     }

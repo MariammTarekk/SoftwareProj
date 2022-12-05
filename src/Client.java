@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Client {
     Scanner cin=new Scanner(System.in);
-    Client(Application obj, String service , int current_user){
+    Client(Application obj, String service , int current_user,Service_Data list){
         double cost_internet=30.0;double cost_mobile=50.0;double cost_donations=100.0;
         double cost_Landline=10.0;
         if(service.equals("Internet")){
@@ -18,7 +18,12 @@ public class Client {
                 int num=cin.nextInt();
                     if(num==1){
                     Payment paye=new Wallet_payment();
-                    paye.pay(obj.users.get(current_user),cost_internet);
+                    Discount discount=new Specific();
+                    if(discount.check(list,"Internet")){
+                        double new_cost=discount.do_discount(list,"Internet",cost_internet);
+                        paye.pay(obj.users.get(current_user),new_cost);
+                    }
+                    else paye.pay(obj.users.get(current_user),cost_internet);
                     System.out.println("after: "+obj.users.get(current_user).wallet.amount);
                         orders ord=new orders();ord.service=service;ord.cost=cost_internet;
                         obj.users.get(current_user).arr.add(ord);

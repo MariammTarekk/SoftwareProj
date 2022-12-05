@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 
 public class Application {
+    private static Application instance=new Application();
+    private Application(){}
+    public static Application getInstance(){
+        return instance;
+    }
     ArrayList<User> users = new ArrayList<User>();
 
     boolean checkUp(SignUp x)

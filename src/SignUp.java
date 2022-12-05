@@ -1,4 +1,4 @@
-public class SignUp extends Application{
+public class SignUp {
     private String email="",password="",user_name="";
 
     public void setUser_name(String user_name) {

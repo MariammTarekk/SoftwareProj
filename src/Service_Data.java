@@ -2,22 +2,22 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Service_Data {
-    HashMap<String,Integer>view;
+    HashMap<String,Double>view;
     Service_Data(){
-        view=new HashMap<String,Integer>();
-        view.put("Mobile",0);
-        view.put("Internet",0);
-        view.put("LandLine",0);
-        view.put("Donations",0);
+        view=new HashMap<String,Double>();
+        view.put("Mobile",0.0);
+        view.put("Internet",0.0);
+        view.put("LandLine",0.0);
+        view.put("Donations",0.0);
     }
     int ovrall_discount=0;
     public void search(String s){
-        for(int i=0;i< view.size();i++){
-            if(view.get(i).equals(s))System.out.println(view.get(i));
+        for (Map.Entry<String,Double> entry :view.entrySet()){
+            if(entry.getKey().equals(s))System.out.println(entry.getKey() +" Service is available");
         }
     }
     public void list(){
-        for (Map.Entry<String,Integer> entry :view.entrySet()){
+        for (Map.Entry<String,Double> entry :view.entrySet()){
             System.out.println(entry.getKey());
         }
     }
