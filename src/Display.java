@@ -2,7 +2,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Display {
-    Display(Application obj, Searching list, Refund_subject refunds){
+    Display(Application obj, Service_Data list, Refund_subject refunds){
         while (true){
             Scanner cin=new Scanner(System.in);
             System.out.println("choose 1 if you are customer ");

@@ -18,21 +18,21 @@ public class Client {
                 int num=cin.nextInt();
                     if(num==1){
                     Payment paye=new Wallet_payment();
-                    paye.pay(obj.users.get(current_user),cost_internet,0);
+                    paye.pay(obj.users.get(current_user),cost_internet);
                     System.out.println("after: "+obj.users.get(current_user).wallet.amount);
                         orders ord=new orders();ord.service=service;ord.cost=cost_internet;
                         obj.users.get(current_user).arr.add(ord);
                     }
                     else if(num==2){
                         Payment pay=new Credit_payment();
-                        pay.pay(obj.users.get(current_user),cost_internet,0);
+                        pay.pay(obj.users.get(current_user),cost_internet);
                         System.out.println("after: "+obj.users.get(current_user).card.amount);
                         orders ord=new orders();ord.service=service;ord.cost=cost_internet;
                         obj.users.get(current_user).arr.add(ord);
                     }
                     else{
                         Payment p=new Cache_payment();
-                        p.pay(obj.users.get(current_user),cost_internet,0);
+                        p.pay(obj.users.get(current_user),cost_internet);
                         orders ord=new orders();ord.service=service;ord.cost=cost_internet;
                         obj.users.get(current_user).arr.add(ord);
                     }
