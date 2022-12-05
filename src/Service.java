@@ -1,4 +1,4 @@
 public interface Service {
-    String name="";
-    public void prep();
+
+    public double getcost();
 }

@@ -1,9 +1,12 @@
 public class Mobile implements Service{
+    double cost=20.0;
     Mobile(){
-        System.out.println("Pay for mobile recharge");
+        System.out.println("Pay 20 dollar for mobile recharge");
     }
+
     @Override
-    public void prep() {
-        System.out.println("Mobile class");
+    public double getcost() {
+        return cost;
     }
+
 }

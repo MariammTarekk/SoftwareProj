@@ -3,8 +3,9 @@ public class Null implements Service{
         System.out.println("Not Available");
     }
 
-    @Override
-    public void prep() {
 
+    @Override
+    public double getcost() {
+        return 0;
     }
 }

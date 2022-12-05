@@ -1,9 +1,11 @@
 public class Donations implements Service{
+    double cost=40.0;
     Donations(){
-        System.out.println("Pay for donations");
+        System.out.println("Pay 40 dollars for donations");
     }
+
     @Override
-    public void prep() {
-        System.out.println("Donations class");
+    public double getcost() {
+        return cost;
     }
 }

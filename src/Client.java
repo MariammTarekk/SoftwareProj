@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class Client {
     Scanner cin=new Scanner(System.in);
     Client(Application obj, String service , int current_user,Service_Data list){
-        double cost_internet=30.0;double cost_mobile=50.0;double cost_donations=100.0;
-        double cost_Landline=10.0;
         if(service.equals("Internet")){
             System.out.println("Choose 1 for Vodafone provider");
             System.out.println("Choose 2 for Etisalat provider");
@@ -18,27 +16,32 @@ public class Client {
                 int num=cin.nextInt();
                     if(num==1){
                     Payment paye=new Wallet_payment();
-                    Discount discount=new Specific();
-                    if(discount.check(list,"Internet")){
-                        double new_cost=discount.do_discount(list,"Internet",cost_internet);
-                        paye.pay(obj.users.get(current_user),new_cost);
+
+                    double cost=s.getcost();
+                    if(list.view.get("Overall")>0.0){
+                          s=new Discount_Service(s,list,"Overall");
+                           cost= s.getcost();
                     }
-                    else paye.pay(obj.users.get(current_user),cost_internet);
+                    if(list.view.get("Internet")>0.0){
+                        s=new Discount_Service(s,list,"Internet");
+                        cost= s.getcost();
+                    }
+                    paye.pay(obj.users.get(current_user),cost);
                     System.out.println("after: "+obj.users.get(current_user).wallet.amount);
-                        orders ord=new orders();ord.service=service;ord.cost=cost_internet;
+                        orders ord=new orders();ord.service=service;ord.cost=cost;
                         obj.users.get(current_user).arr.add(ord);
                     }
                     else if(num==2){
                         Payment pay=new Credit_payment();
-                        pay.pay(obj.users.get(current_user),cost_internet);
+                        pay.pay(obj.users.get(current_user),s.getcost());
                         System.out.println("after: "+obj.users.get(current_user).card.amount);
-                        orders ord=new orders();ord.service=service;ord.cost=cost_internet;
+                        orders ord=new orders();ord.service=service;ord.cost=s.getcost();
                         obj.users.get(current_user).arr.add(ord);
                     }
                     else{
                         Payment p=new Cache_payment();
-                        p.pay(obj.users.get(current_user),cost_internet);
-                        orders ord=new orders();ord.service=service;ord.cost=cost_internet;
+                        p.pay(obj.users.get(current_user),s.getcost());
+                        orders ord=new orders();ord.service=service;ord.cost=s.getcost();
                         obj.users.get(current_user).arr.add(ord);
                     }
                 }
