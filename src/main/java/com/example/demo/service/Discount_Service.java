@@ -1,11 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.DataBase.Service_Data;
+import com.example.demo.Entity.Service_Data;
 
 public class Discount_Service implements IService {
     IService service;
     double percent;
-    Discount_Service(IService service, Service_Data serve, String name){
+    public Discount_Service(IService service, Service_Data serve, String name){
         this.service=service;
         this.percent=serve.view.get(name);
     }

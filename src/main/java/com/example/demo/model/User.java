@@ -9,7 +9,15 @@ import java.util.ArrayList;
 public class User {
     String name="",mails="",passward="";
     String card_passward="";
-
+    public  Balance wallet;
+    public Balance card;
+    public static ArrayList<Order> arr;
+    public ArrayList<String>messages;
+    User(){
+        arr=new ArrayList<Order>();
+        wallet =new Wallet(200.0);
+        card =new Credit_card(100.0);
+    }
     public String getName() {
         return name;
     }

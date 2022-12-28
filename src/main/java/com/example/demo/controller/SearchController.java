@@ -1,15 +1,13 @@
 package com.example.demo.controller;
 
-import com.example.demo.DataBase.Service_Data;
-import com.example.demo.model.Response;
+import com.example.demo.Entity.Service_Data;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Map;
 @RestController
 public class SearchController {
-    Service_Data obj=new Service_Data();
+    Service_Data obj=Service_Data.getInstance();
     @PostMapping(value = "/search")
     public String search(@RequestBody Service_Data s){
         String x=obj.search(s.getTest());

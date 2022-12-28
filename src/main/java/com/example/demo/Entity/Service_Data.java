@@ -1,7 +1,5 @@
-package com.example.demo.DataBase;
+package com.example.demo.Entity;
 
-
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,12 +7,7 @@ import java.util.Map;
 public class Service_Data {
     public HashMap<String,Double>view;
     String test="";
-
-    public String getTest() {
-        return test;
-    }
-
-    public Service_Data(){
+    private Service_Data(){
         view=new HashMap<String,Double>();
         view.put("Mobile",0.0);
         view.put("Internet",0.0);
@@ -22,6 +15,15 @@ public class Service_Data {
         view.put("Donations",0.0);
         view.put("Overall",0.0);
     }
+    private static Service_Data instance=new Service_Data();
+    public static Service_Data getInstance(){
+        return instance;
+    }
+    public String getTest() {
+        return test;
+    }
+
+
     public String search(String s){
         for (Map.Entry<String,Double> entry :view.entrySet()){
             if(entry.getKey().equals(s)){
