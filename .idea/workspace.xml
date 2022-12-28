@@ -4,13 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb02ee36-4dc5-453f-aa13-ed6eef0b96fc" name="Changes" comment=".">
+    <list default="true" id="748ac4bf-2f6d-491c-a87f-67c0aad0babf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Add Discount Process.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment for internet process.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refund req.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search process.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Signup process.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User refund.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/last Class Diagram.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/push.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SoftwareProjectt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Balance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Cache_payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Companies.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Credit_card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Credit_payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Discount_Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Display.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Donations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Etisalat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Form.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Hospitals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Internet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Internet_Form.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/LandLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Mobile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/NGOS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Null.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Observer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Orange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Refund_subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Schools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Service_Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/SignIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/SignUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Vodafone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Wallet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Wallet_payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/We.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/orders.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,26 +76,32 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JPNYfSJNTK5HPRruafSP96ej4O" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JSCkHTaa7yhpawfhykqapGpyqw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="openjdk-19" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/HP/Downloads/SoftwareProj",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="temurin-11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="SoftwareProjectt" />
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
+      <module name="SoftwareProj" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -46,42 +110,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb02ee36-4dc5-453f-aa13-ed6eef0b96fc" name="Changes" comment="" />
-      <created>1671975816746</created>
+      <changelist id="748ac4bf-2f6d-491c-a87f-67c0aad0babf" name="Changes" comment="" />
+      <created>1672062240590</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1671975816746</updated>
+      <updated>1672062240590</updated>
     </task>
-    <task id="LOCAL-00001" summary=".">
-      <created>1671978167740</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1671978167740</updated>
-    </task>
-    <task id="LOCAL-00002" summary=".">
-      <created>1671982259922</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1671982259922</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
