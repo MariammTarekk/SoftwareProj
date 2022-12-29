@@ -4,26 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748ac4bf-2f6d-491c-a87f-67c0aad0babf" name="Changes" comment="Phase2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Form.java" afterDir="false" />
+    <list default="true" id="748ac4bf-2f6d-491c-a87f-67c0aad0babf" name="Changes" comment="observer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/GetCost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Balance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Cache_payment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Companies.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Credit_card.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Credit_payment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Discount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Display.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Donations.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Etisalat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Form.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Hospitals.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Internet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Internet_Form.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/LandLine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Mobile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/NGOS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Null.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Observer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Orange.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Overall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Payment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Refund_subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Schools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Service_Data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/SignIn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/SignUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Specific.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Transaction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Vodafone.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Wallet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/Wallet_payment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/We.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/out/production/SoftwareProj/orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DataBase/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DataBase/Refund_subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Refund_subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DataBase/Service_Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Service_Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Balance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Cache_payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Cache_payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Credit_payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Credit_payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Wallet_payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Wallet_payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ServiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/User_info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Discount_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Discount_Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +81,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2JSCkHTaa7yhpawfhykqapGpyqw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,17 +93,44 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/HP/Downloads/SoftwareProj",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
-      <module name="SoftwareProj" />
+      <module name="demo" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="demo" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

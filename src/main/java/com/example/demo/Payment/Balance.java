@@ -1,7 +1,7 @@
 package com.example.demo.Payment;
 
 public class Balance {
-    public double amount=100.0;
+    public double amount=0.0;
     Balance(double amount) {
         this.amount=amount;
     }
@@ -12,6 +12,7 @@ public class Balance {
     public double getAmount() {
         return amount;
     }
+    public Balance(){}
 
     public boolean withdraw(double cost){
         if(cost>amount){

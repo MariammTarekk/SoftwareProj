@@ -9,14 +9,63 @@ import java.util.ArrayList;
 public class User {
     String name="",mails="",passward="";
     String card_passward="";
-    public  Balance wallet;
-    public Balance card;
+
+    public  Balance wallet=new Balance();
+    public Balance card=new Balance();
     public static ArrayList<Order> arr;
     public ArrayList<String>messages;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMails(String mails) {
+        this.mails = mails;
+    }
+
+    public void setPassward(String passward) {
+        this.passward = passward;
+    }
+
+    public void setCard_passward(String card_passward) {
+        this.card_passward = card_passward;
+    }
+
+
+    public Balance getWallet() {
+        return wallet;
+    }
+
+    public void setWallet(Balance wallet) {
+        this.wallet = wallet;
+    }
+
+    public Balance getCard() {
+        return card;
+    }
+
+    public void setCard(Balance card) {
+        this.card = card;
+    }
+
+    public static ArrayList<Order> getArr() {
+        return arr;
+    }
+
+    public static void setArr(ArrayList<Order> arr) {
+        User.arr = arr;
+    }
+
+    public ArrayList<String> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(ArrayList<String> messages) {
+        this.messages = messages;
+    }
+
     User(){
         arr=new ArrayList<Order>();
-        wallet =new Wallet(200.0);
-        card =new Credit_card(100.0);
     }
     public String getName() {
         return name;
