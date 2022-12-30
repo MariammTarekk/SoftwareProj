@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.BsLogic;
 
 import com.example.demo.Entity.Service_Data;
 import org.springframework.web.bind.annotation.PostMapping;

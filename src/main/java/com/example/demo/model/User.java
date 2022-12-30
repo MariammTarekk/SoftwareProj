@@ -7,12 +7,12 @@ import com.example.demo.Payment.Wallet;
 import java.util.ArrayList;
 
 public class User {
-    String name="",mails="",passward="";
+    String name="",mail="",passward="";
     String card_passward="";
 
     public  Balance wallet=new Balance();
     public Balance card=new Balance();
-    public static ArrayList<Order> arr;
+    public  ArrayList<Order> arr;
     public ArrayList<String>messages;
 
     public void setName(String name) {
@@ -20,7 +20,7 @@ public class User {
     }
 
     public void setMails(String mails) {
-        this.mails = mails;
+        this.mail = mails;
     }
 
     public void setPassward(String passward) {
@@ -48,13 +48,10 @@ public class User {
         this.card = card;
     }
 
-    public static ArrayList<Order> getArr() {
+    public  ArrayList<Order> getArr() {
         return arr;
     }
 
-    public static void setArr(ArrayList<Order> arr) {
-        User.arr = arr;
-    }
 
     public ArrayList<String> getMessages() {
         return messages;
@@ -80,6 +77,6 @@ public class User {
     }
 
     public String getMails() {
-        return mails;
+        return mail;
     }
 }

@@ -8,9 +8,14 @@ import java.util.HashMap;
 public class Refund_subject {
     //list of observers
     HashMap<User,String>refund_list=new HashMap<User,String>();
-    public void Set_State(User User, String s){
+    public static Refund_subject instance=new Refund_subject();
+    public static Refund_subject getInstance(){
+        return instance;
+    }
+    private Refund_subject(){}
+    public String Set_State(User User, String s){
         refund_list.put(User,s);
-        System.out.println("Refund request sent");
+        return "Refund request sent";
     }
     public double refund_value(User User, String s){
         double x=0.0;

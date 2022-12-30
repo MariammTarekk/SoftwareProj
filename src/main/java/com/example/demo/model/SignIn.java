@@ -2,10 +2,10 @@ package com.example.demo.model;
 
 public class SignIn {
     String mail="";
-    String Password="";
+    String password="";
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public String getMail() {

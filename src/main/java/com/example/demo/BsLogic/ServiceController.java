@@ -1,14 +1,8 @@
-package com.example.demo.controller;
+package com.example.demo.BsLogic;
 
 import com.example.demo.Entity.Database;
-import com.example.demo.Payment.Cache_payment;
-import com.example.demo.Payment.Credit_payment;
-import com.example.demo.Payment.Payment;
-import com.example.demo.Payment.Wallet_payment;
 import com.example.demo.Providers.*;
 import com.example.demo.model.Form;
-import com.example.demo.model.Order;
-import com.example.demo.service.Discount_Service;
 import com.example.demo.service.IService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -78,13 +72,19 @@ public class ServiceController {
         }
         else if(form.getServiceName().equals("Donations")){
             if(form.getCompanyName().equals("school")){
-                return "";
+                Companies objj=new Schools();
+                IService s=objj.createDonations();
+               return obb.get(form,s,data);
             }
             else if(form.getCompanyName().equals("NGOS")){
-                return "";
+                Companies objj=new NGOS();
+                IService s=objj.createDonations();
+                return obb.get(form,s,data);
             }
             else if(form.getCompanyName().equals("Hospital")){
-                return "";
+                Companies objj=new Hospitals();
+                IService s=objj.createDonations();
+                return obb.get(form,s,data);
             }
             else return "Not Found";
 
