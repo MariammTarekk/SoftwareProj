@@ -23,37 +23,5 @@ public class Database {
             new Admin("Mariam","12345")
     };
 
-    public String SignUp(User person) {
-        for (User persons : users) {
-            if(persons.getMails().equals(person.getMails()) ){
-                return "Email already exists";
-            }
-            if(persons.getName().equals(person.getName())){
-                return "User name already exists";
-            }
-        }
-        users.add(person);
-        return "Added Successfully";
-    }
 
-    public User loginUser(SignIn user) {
-        for(User persons:users){
-            if(persons.getMails().equals(user.getMail())){
-                if(persons.getPassward().equals(user.getPassword())){
-                    return persons;
-                }
-            }
-        }
-        return null;
-    }
-    public Admin loginAdmin(Admin admin) {
-        for(Admin persons:admins){
-            if(persons.getName().equals(admin.getName())){
-                if(persons.getPassword().equals(admin.getPassword())){
-                    return persons;
-                }
-            }
-        }
-        return null;
-    }
 }

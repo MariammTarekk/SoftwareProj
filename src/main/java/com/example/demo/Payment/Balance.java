@@ -1,5 +1,7 @@
 package com.example.demo.Payment;
 
+import com.example.demo.model.User;
+
 public class Balance {
     public double amount=0.0;
     Balance(double amount) {
@@ -14,11 +16,11 @@ public class Balance {
     }
     public Balance(){}
 
-    public boolean withdraw(double cost){
-        if(cost>amount){
+    public boolean withdraw(double cost, User user){
+        if(cost>user.card.amount){
             return false;
         }
-        amount-=cost;
+        user.card.amount-=cost;
         return true;
     }
     public void add(double amount){

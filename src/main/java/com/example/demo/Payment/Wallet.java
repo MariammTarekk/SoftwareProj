@@ -1,16 +1,24 @@
 package com.example.demo.Payment;
 
+import com.example.demo.model.User;
+
 public class Wallet extends Balance {
     public Wallet(double amount) {
         super(amount);
     }
-    public void fund(Credit_card card, String pass, double cost){
-        if(card.check(pass)){
-            card.withdraw(cost);
-            this.add(cost);
+
+    public Wallet() {
+    }
+
+    public String fund(Credit_card card, String pass, double cost, User user){
+        if(card.check(pass,user)){
+            card.withdraw(cost,user);
+            user.wallets.add("add "+cost+" to the wallet");
+            user.wallet.amount+=cost;
+            return "Operation Done";
         }
         else{
-            System.out.println("!!!!");
+            return "check password";
         }
 
     }

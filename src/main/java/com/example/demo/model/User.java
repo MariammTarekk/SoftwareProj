@@ -1,36 +1,46 @@
 package com.example.demo.model;
 
 import com.example.demo.Payment.Balance;
-import com.example.demo.Payment.Credit_card;
-import com.example.demo.Payment.Wallet;
 
 import java.util.ArrayList;
 
 public class User {
-    String name="",mail="",passward="";
-    String card_passward="";
+    String name="";
+    String mail="";
+    String user_Pass ="";
+    String card_Pass ="";
 
     public  Balance wallet=new Balance();
     public Balance card=new Balance();
     public  ArrayList<Order> arr;
+    public ArrayList<String>wallets;
     public ArrayList<String>messages;
+
+    public String getUser_Pass() {
+        return user_Pass;
+    }
+
+    public void setUser_Pass(String user_Pass) {
+        this.user_Pass = user_Pass;
+    }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setMails(String mails) {
-        this.mail = mails;
+    public void setCard_Pass(String card_Pass) {
+        this.card_Pass = card_Pass;
     }
 
-    public void setPassward(String passward) {
-        this.passward = passward;
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
-    public void setCard_passward(String card_passward) {
-        this.card_passward = card_passward;
-    }
 
+
+    public void setArr(ArrayList<Order> arr) {
+        this.arr = arr;
+    }
 
     public Balance getWallet() {
         return wallet;
@@ -61,22 +71,21 @@ public class User {
         this.messages = messages;
     }
 
-    User(){
+    public User(){
+
         arr=new ArrayList<Order>();
+        wallets=new ArrayList<String>();
     }
     public String getName() {
         return name;
     }
 
-    public String getPassward() {
-        return passward;
+
+    public String getCard_Pass() {
+        return card_Pass;
     }
 
-    public String getCard_passward() {
-        return card_passward;
-    }
-
-    public String getMails() {
+    public String getMail() {
         return mail;
     }
 }

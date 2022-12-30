@@ -14,15 +14,15 @@ import java.util.ArrayList;
 @RestController
 public class UserController {
     private Database data= Database.getInstance();
-
+    Logic dp=new Logic();
     @PostMapping(value = "/signup")
     public String Signup(@RequestBody User user){
-        return data.SignUp(user);
+        return dp.SignUp(user);
     }
 
     @PostMapping(value = "/loginUser")
     public String loginUser(@RequestBody SignIn user) {
-        data.activeuser = data.loginUser(user);
+        data.activeuser = dp.loginUser(user);
         if(data.activeuser!=null){
             return "Welcome to Fawry System";
         }
@@ -30,16 +30,7 @@ public class UserController {
             return"Email or password is not correct";
         }
     }
-    @PostMapping(value = "/loginAdmin")
-    public String loginUser(@RequestBody Admin admin) {
-        data.activeadmin=data.loginAdmin(admin);
-        if(data.activeadmin!=null){
-            return "Welcome "+admin.getName();
-        }
-        else{
-            return "Name or password is not correct";
-        }
-    }
+
     @PostMapping(value = "/signout")
     public String SignOut(){
         if(data.activeuser==null){

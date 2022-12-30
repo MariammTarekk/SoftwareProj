@@ -1,11 +1,13 @@
 package com.example.demo.Entity;
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Service_Data {
     public HashMap<String,Double>view;
+
     String test="";
     private Service_Data(){
         view=new HashMap<String,Double>();
@@ -32,11 +34,7 @@ public class Service_Data {
         }
         return "Service Not Found";
     }
-    public void list(){
-        for (Map.Entry<String,Double> entry :view.entrySet()){
-            System.out.println(entry.getKey());
-        }
-    }
+
 
 }
 
