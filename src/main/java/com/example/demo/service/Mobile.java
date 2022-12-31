@@ -10,5 +10,9 @@ public class Mobile implements IService {
     public double getcost() {
         return cost;
     }
+    @Override
+    public void setCost(double v) {
+
+    }
 
 }

@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748ac4bf-2f6d-491c-a87f-67c0aad0babf" name="Changes" comment="ph2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/Logic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Discount.java" afterDir="false" />
+    <list default="true" id="748ac4bf-2f6d-491c-a87f-67c0aad0babf" name="Changes" comment="Phase2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/GetCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/PaymetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/RefundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/RefundController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/PaymetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/PaymetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/ServiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BsLogic/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Refund_subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Refund_subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Service_Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Entity/Service_Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Balance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Credit_card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Credit_card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Payment/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Donations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Donations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Internet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Internet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/LandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/LandLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Mobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Mobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Null.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/Null.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,50 +46,27 @@
     </option>
   </component>
   <component name="ProjectId" id="2JSCkHTaa7yhpawfhykqapGpyqw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Assignment2_Basma_Mokhtar_20200017_20200323_20200523_20200273_20200625",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Downloads/SoftwareProj&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Unnamed">
+}</component>
+  <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
-      <module name="demo" />
+      <module name="SoftwareProj" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Spring Boot.DemoApplication" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,9 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672062240590</updated>
-      <workItem from="1672348849495" duration="767000" />
-      <workItem from="1672373854870" duration="3478000" />
-      <workItem from="1672398041115" duration="21836000" />
     </task>
     <task id="LOCAL-00001" summary="Phase2">
       <created>1672232004917</created>
@@ -122,39 +91,8 @@
       <option name="project" value="LOCAL" />
       <updated>1672232108643</updated>
     </task>
-    <task id="LOCAL-00003" summary="ph2">
-      <created>1672336749321</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1672336749321</updated>
-    </task>
-    <task id="LOCAL-00004" summary="ph2">
-      <created>1672336847220</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1672336847220</updated>
-    </task>
-    <task id="LOCAL-00005" summary="ph2">
-      <created>1672349127995</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1672349127995</updated>
-    </task>
-    <task id="LOCAL-00006" summary="ph2">
-      <created>1672377739529</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1672377739529</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -169,7 +107,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Phase2" />
-    <MESSAGE value="ph2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ph2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phase2" />
   </component>
 </project>

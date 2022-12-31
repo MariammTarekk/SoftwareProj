@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class AdminController {
     private Database data= Database.getInstance();
     private Service_Data dp=Service_Data.getInstance();
-    Logic dpp=new Logic();
+    Display dpp=new Display();
     @PostMapping(value = "/loginAdmin")
     public String loginUser(@RequestBody Admin admin) {
         data.activeadmin=dpp.loginAdmin(admin);

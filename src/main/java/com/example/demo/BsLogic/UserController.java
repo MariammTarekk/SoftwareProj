@@ -1,7 +1,6 @@
 package com.example.demo.BsLogic;
 
 import com.example.demo.Entity.Database;
-import com.example.demo.model.Admin;
 import com.example.demo.model.SignIn;
 import com.example.demo.model.User;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +13,7 @@ import java.util.ArrayList;
 @RestController
 public class UserController {
     private Database data= Database.getInstance();
-    Logic dp=new Logic();
+    Display dp=new Display();
     @PostMapping(value = "/signup")
     public String Signup(@RequestBody User user){
         return dp.SignUp(user);

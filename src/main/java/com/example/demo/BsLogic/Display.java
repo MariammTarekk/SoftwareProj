@@ -2,7 +2,6 @@ package com.example.demo.BsLogic;
 
 import com.example.demo.Entity.Database;
 import com.example.demo.Entity.Refund_subject;
-import com.example.demo.Entity.Service_Data;
 import com.example.demo.model.Admin;
 import com.example.demo.model.SignIn;
 import com.example.demo.model.User;
@@ -10,7 +9,7 @@ import com.example.demo.model.User;
 import java.util.ArrayList;
 import java.util.Map;
 
-public class Logic {
+public class Display {
     Database dp=Database.getInstance();
     Refund_subject data=Refund_subject.getInstance();
     public String SignUp(User person) {
