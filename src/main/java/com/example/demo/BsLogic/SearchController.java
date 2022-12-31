@@ -25,9 +25,9 @@ public class SearchController {
             if(obj.view.get(s)>0.0){
                 return "There is discount "+obj.view.get(s)+"%";
             }
-            else return "Not Available";
+            else return "Not Available Discount";
         }
-        else return "login s user first";
+        else return "login as user first";
 
     }
 

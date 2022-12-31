@@ -16,4 +16,9 @@ public class Discount_Service implements IService {
         x-=(x/100.0)* percent;
         return x;
     }
+
+    @Override
+    public void setCost(double v) {
+
+    }
 }

@@ -8,25 +8,6 @@ import java.util.HashMap;
 public class Refund_subject {
     //list of observers
     public HashMap<User,String>refund_list=new HashMap<User,String>();
-    String name="";
-    String state="";
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public static Refund_subject instance=new Refund_subject();
     public static Refund_subject getInstance(){
         return instance;

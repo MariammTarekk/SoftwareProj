@@ -26,6 +26,16 @@ public class AdminController {
             return "Name or password is not correct";
         }
     }
+    @PostMapping(value = "/signoutAdmin")
+    public String SignOut(){
+        if(data.activeadmin!=null){
+            data.activeadmin=null;
+            return "SignOut successfully";
+        }
+        else{
+            return "SignOut successfully";
+        }
+    }
     @PostMapping(value = "/adddiscount")
     public String Add_Discount(@RequestBody Discount discount){
         if(data.activeadmin!=null){

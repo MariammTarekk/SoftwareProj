@@ -12,10 +12,13 @@ public class Wallet extends Balance {
 
     public String fund(Credit_card card, String pass, double cost, User user){
         if(card.check(pass,user)){
-            card.withdraw(cost,user);
-            user.wallets.add("add "+cost+" to the wallet");
-            user.wallet.amount+=cost;
-            return "Operation Done";
+            if(card.withdraw(cost,user)){
+                user.wallets.add("add "+cost+" to the wallet");
+                user.wallet.amount+=cost;
+                return "Operation Done";
+            }
+            else return "check balance";
+
         }
         else{
             return "check password";

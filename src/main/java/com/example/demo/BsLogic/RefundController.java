@@ -3,6 +3,7 @@ package com.example.demo.BsLogic;
 import com.example.demo.Entity.Database;
 import com.example.demo.Entity.Refund_subject;
 import com.example.demo.model.Order;
+import com.example.demo.model.Refund;
 import com.example.demo.model.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,21 +31,19 @@ public class RefundController {
             else return "Transaction should complete first";
         }
         else return "login as user first";
-
     }
-    @PostMapping(value = "/response")
-    public String Response(@RequestBody Refund_subject subject){
+    Transaction transaction=new Transaction();
+    @PostMapping(value = "/Send")
+    public String Send_Resp(@RequestBody Refund subject){
         for(Map.Entry<User,String> entry:refund.refund_list.entrySet()) {
             if(entry.getKey().getName().equals(subject.getName())) {
-                if(subject.getState().equals("Accepted_refund")){
-                    Transaction transaction=new Transaction();
+                if(subject.getState().equals("AC")){
                     transaction.update(entry.getKey(),refund.refund_value(entry.getKey(),entry.getValue()));
-                    refund.notify_observers(entry.getKey(),"Accepted_refund");
-                    System.out.println(entry.getKey().wallet.amount);
+                    refund.notify_observers(entry.getKey(),"AC");
                     refund.refund_list.remove(entry.getKey());
                 }
                 else{
-                    refund.notify_observers(entry.getKey(),"Rejected_refund");
+                    refund.notify_observers(entry.getKey(),"Rejected");
                     refund.refund_list.remove(entry.getKey());
                 }
                 return "Respone Done for this user";
@@ -52,6 +51,14 @@ public class RefundController {
         }
         return "no refund request with this user name";
 
+    }
+    @GetMapping(value = "/list")
+    public ArrayList<String> listall(){
+        ArrayList<String>lis=new ArrayList<>();
+        for (Map.Entry<User,String> entry:refund.refund_list.entrySet()){
+            lis.add(entry.getKey().getName()+" do refund request for "+entry.getValue()+" Service");
+        }
+        return lis;
     }
 
 }

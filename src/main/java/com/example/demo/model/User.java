@@ -75,6 +75,7 @@ public class User {
 
         arr=new ArrayList<Order>();
         wallets=new ArrayList<String>();
+        messages=new ArrayList<String>();
     }
     public String getName() {
         return name;

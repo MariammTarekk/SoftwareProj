@@ -16,6 +16,7 @@ public class UserController {
     Display dp=new Display();
     @PostMapping(value = "/signup")
     public String Signup(@RequestBody User user){
+
         return dp.SignUp(user);
     }
 
@@ -30,14 +31,13 @@ public class UserController {
         }
     }
 
-    @PostMapping(value = "/signout")
+    @PostMapping(value = "/signoutUser")
     public String SignOut(){
-        if(data.activeuser==null){
-            data.activeadmin=null;
+        if(data.activeuser!=null){
+            data.activeuser=null;
             return "SignOut successfully";
         }
         else{
-            data.activeuser=null;
             return "SignOut successfully";
         }
     }
